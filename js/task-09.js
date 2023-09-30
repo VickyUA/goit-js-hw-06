@@ -13,7 +13,8 @@ function getRandomHexColor() {
 
 colorBtn.addEventListener('click', handleClick);
 
-function handleClick(event) {
-  body.style.backgroundColor = getRandomHexColor(); 
-  currentColor.textContent = getRandomHexColor(); 
-}
+function handleClick() {
+  const randomColor = getRandomHexColor();
+  body.style.backgroundColor = randomColor; 
+  currentColor.textContent = randomColor; 
+};
